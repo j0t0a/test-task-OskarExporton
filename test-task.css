@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 0 25px;
+    padding-bottom: 40px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+}
+.left{
+    width: 50vw;
+}
+.side-image{
+    width: 100%;
+    padding: 60px;
+}
+.top{
+    display: flex;
+    height: 100vh;
+}
+@media (max-width: 1080px) {
+    .top{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .side-image{
+        padding: 10px;
+    }
+
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+.price{
+    display: flex
+}
+.right-comment{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.rate{
+    margin-bottom: 20px;
+    width: min-content;
+    white-space: nowrap;
+}
+.rate::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+}
+.dynamis{
+    font-size: 25px; margin-bottom: 10px;
+}
+.price{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.marked{
+    margin: 0 10px;
+    text-decoration: line-through;
+}
+.red-text{
+    margin-right: 10px;
+    color: red;
+}
+button{
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-style: italic;
+    font-size: 15px;
+    transition: 0.25s;
+}
+button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.about-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guarantee{
+    padding-top: 20px;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    padding: 10px 0;
+    font-size: 25px;
+}
+.welcome{
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+}
+.welcome::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+}
+.welcome::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+}
+.first-ul{
+    margin: 2vh 0;
+}
+.first-li{
+    padding: 0.4vh;
+    list-style: "\2713";
+}
+.painfree{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.pathway{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.massager{
+    font-style: italic;
+
+}
+.massager::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+}
+.second-li{
+    margin: 10px auto;
+    width: 60%;
+}
+.one-five{
+    font-size: 20px;
+    padding: 15px 0;
+}
+.people{
+    width: 60%;
+}
+.users-num{
+    font-size: 90px;
+    margin-top: 20px;
+}
+.refresh{
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.fifth-img{
+    width: 60%;
+    margin: 15px 0;
+}
+.third-li{
+    margin: 10px auto;
+    list-style: none;
+}
+.step{
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+}
+.step::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+}
+.immerse{
+    font-style: italic;
+    width: 50%;
+    text-align: center;
+}
+.immerse::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+}
+.comment{
+    font-style: italic;
+}
+.uls{
+    display: flex;
+    width: min(600px, 90vw);
+}
+.uls > ul:nth-child(1){
+    margin-right: 20px;
+}
+@media (max-width: 480px) {
+    .uls{
+        flex-direction: column;
+    }
+    .users-num{
+        font-size: 12vw;
+    }
+}
+.dataDropList{
+    margin-top: 40px;
+    width: min(800px, 90vw);
+}
+.dataDropList .dataDropListItem{
+    max-height: 56px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    transition: .5s;    
+}
+.dataDropList .dataDropListItem:not(:last-child){
+    margin-bottom: 24px;
+}
+.dataDropList .dataDropListItem .toggleBar{
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 56px;
+    background-color: aliceblue;
+}
+.dataDropList .dataDropListItem .toggleBar h5{
+    transform: translateY(2px);
+}
+.dataDropList .dataDropListItem .toggleBar svg, img{
+    margin-right: 12px;
+}
+.dataDropList .dataDropListItem .toggleBar img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.dataDropList .dataDropListItem .toggleBar svg{
+    height: 24px;
+}
+.dataDropList .dataDropListItem .infoContent{
+    padding: 24px;
+}
+.dataDropList .dataDropListItem.active{
+    max-height: 400px;
+}
+.dataDropList .dataDropListItem .toggleBar .toggleIcon{
+    margin-left: auto;
+    transition: .3s;
+}
+.dataDropList .dataDropListItem.active .toggleBar .toggleIcon{
+    transform: rotate(180deg);
+}
+  
